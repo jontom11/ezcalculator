@@ -11,8 +11,8 @@ class App extends Component {
   }
 
   AC() {
-    this.setState = ({outputText: ''});
-    document.getElementById('input').value = this.state.outputText;
+    this.setState({outputText: ''});
+    document.getElementById('input').value = '';
   }
 
   addText (s) {

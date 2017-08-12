@@ -7,6 +7,12 @@ class App extends Component {
     this.state = ({outputText: ''});
     this.addText = this.addText.bind(this);
     this.equals = this.equals.bind(this);
+    this.AC = this.AC.bind(this);
+  }
+
+  AC() {
+    this.setState = ({outputText: ''});
+    document.getElementById('input').value = this.state.outputText;
   }
 
   addText (s) {
@@ -38,28 +44,29 @@ class App extends Component {
           <button className='button' id='one' onClick={()=>this.addText('1')}>1</button>
           <button className='button' id='two' onClick={()=>this.addText('2')}>2</button>
           <button className='button' id='three' onClick={()=>this.addText('3')}>3</button>
-          <button className='button' id='add' onClick={()=>this.addText('+')}>+</button>
+          <button className='button' id='AC' onClick={()=>this.AC('AC')}>AC</button>
 
           </div>
           <div>
           <button className='button' id='four' onClick={()=>this.addText('4')}>4</button>
           <button className='button' id='five' onClick={()=>this.addText('5')}>5</button>
           <button className='button' id='six' onClick={()=>this.addText('6')}>6</button>
-          <button className='button' id='subtract' onClick={()=>this.addText('-')}>-</button>
+          <button className='button' id='add' onClick={()=>this.addText('+')}>+</button>
 
           </div>
           <div>
           <button className='button' id='seven' onClick={()=>this.addText('7')}>7</button>
           <button className='button' id='eight' onClick={()=>this.addText('8')}>8</button>
           <button className='button' id='nine' onClick={()=>this.addText('9')}>9</button>
-          <button className='button' id='multiply' onClick={()=>this.addText('*')}>x</button>
+          <button className='button' id='subtract' onClick={()=>this.addText('-')}>-</button>
 
           </div>
           <div>
           <button className='button' id='zero' onClick={()=>this.addText('0')}>0</button>
-
           <button className='button' id='divide' onClick={()=>this.addText('/')}>/</button>
+          <button className='button' id='multiply' onClick={()=>this.addText('*')}>x</button>
           <button className='button' id='equals' onClick={()=>this.equals(document.getElementById('input').value)}>=</button>
+
           </div>
       </div>
     );

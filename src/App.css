@@ -23,24 +23,42 @@
   to { transform: rotate(360deg); }
 }
 
-#input {
-margin: 5px;
-padding: 20px;
-width: 180px;
+
+table{
+table-layout: fixed;
 }
 
 .button {
   margin: 1px;
   padding: 20px;
-  border: 1px solid #2e2e2e;
-  background-color: #f0f0f0;
+  border: 1px solid #245454;
+  background-color: #3f5424;
   font-size: 150%;
+  width: 70px;
+  
 }
 
 .button:hover {
-  background-color: #c0c0c0;
+  background-color: #1c3334;
 }
 
 .button:active{
-  background-color: #a0a0a0
+  background-color: #376e6f
+}
+
+#input {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  width: 250px;
+  font-size: 180%;
+  text-align: right;
+  background-color: #2e151b;
+  color: white;
+  border: 2px solid #0e151b
+}
+
+#table{
+  margin: auto;
 }
